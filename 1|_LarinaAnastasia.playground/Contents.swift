@@ -42,4 +42,4 @@ var pers: Float = 5
 let i: Float = 5 //лет
 var gain: Float = sum*pers/100*i
 print("Сумма вклада через 5 лет будет \(gain)")
-////новое
+//
