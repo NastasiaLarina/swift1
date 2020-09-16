@@ -124,4 +124,3 @@ trunk.openWind = .close
 //6. Вывести значения свойств экземпляров в консоль.
 
 rint ("Информация о машине: brand&model: \(car.brand), release: \(car.release), free trunkVolume: \(car.trunkVolume), engine is \(car.startEngine)")
-//много ошибок
