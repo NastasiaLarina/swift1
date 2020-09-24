@@ -94,3 +94,126 @@ class sportCar {
         hatchState = .close
     }
 }
+
+/*//1
+class Car {
+    var color: String
+    var barnd: String
+    var relize: Int
+    
+    init(color: String, brand: String, relize: Int){
+        self.color = color
+        self.barnd = brand
+        self.relize = relize
+    }
+    func action(){}
+    
+}
+//2
+class TrunCar: Car {
+    var maxLoad: Int
+    init(maxLoad: Int) {
+        self.maxLoad = maxLoad
+        super.init(color: "Red", brand: "FDR", relize: 2000)
+    }
+}
+class SportCar: Car {
+    var maxSpeed: Int
+    init(maxSpeed: Int){
+        self.maxSpeed = maxSpeed
+        super.init(color: "Blue", brand: "BMW", relize: 2020)
+    }
+}
+
+//3
+enum CarActions {
+    case loadTruck (weight: Int)// акшин загрузить кар
+    case apgrateSpeed (time: Int)//акшин скорость
+}
+class Car {
+    var color: String
+    var barnd: String
+    var relize: Int
+    
+    init(color: String, brand: String, relize: Int){
+        self.color = color
+        self.barnd = brand
+        self.relize = relize
+    }
+    func action(action: CarActions){}
+}
+class TrunCar: Car {
+    var maxLoad: Int
+    init(maxLoad: Int) {
+        self.maxLoad = maxLoad
+        super.init(color: "Red", brand: "FDR", relize: 2000)
+    }
+}
+class SportCar: Car {
+    var maxSpeed: Int
+    init(maxSpeed: Int){
+        self.maxSpeed = maxSpeed
+        super.init(color: "Blue", brand: "BMW", relize: 2020)
+    }
+}
+//4
+enum CarActions {
+    case loadTruck (weight: Int)// акшин загрузить кар
+    case apgrateSpeed (time: Int)//акшин выехать на гонку
+}
+class Car {
+    var color: String
+    var barnd: String
+    var relize: Int
+    
+    init(color: String, brand: String, relize: Int){
+        self.color = color
+        self.barnd = brand
+        self.relize = relize
+    }
+    func action(action: CarActions){}
+}
+class TrunCar: Car {
+    var maxLoad: Int
+    init(maxLoad: Int) {
+        self.maxLoad = maxLoad
+        super.init(color: "Red", brand: "FDR", relize: 2000)
+    }
+    override func action(action: CarActions){
+        switch action {
+        case .loadTrack(let weight):
+            self.maxLoad += weight
+        default:
+            break
+        }
+    }
+    
+}
+class SportCar: Car {
+    var maxSpeed: Int
+    init(maxSpeed: Int){
+        self.maxSpeed = maxSpeed
+        super.init(color: "Blue", brand: "BMW", relize: 2020)
+    }
+    override func action(action: CarActions){
+        switch action {
+        case .upradeSpeed(let speed):
+            self.maxSpeed += speed
+        default:
+            break
+        }
+    }
+}
+//5,6
+let sportCar = SportCar(maxSpeed: 250)
+let truckCar = TrunCar(maxLoad: 1000)
+
+print(sportCar.maxSpeed)
+print(truckCar.maxLoad)
+
+sportCar.action(action: .upgrateSpeed(speed: 50))
+truckCar.action(action: .loadTruck(wight: 100))
+
+print(sportCar.maxSpeed, sportCar.color, sportCar.relize)
+print(truckCar.maxLoad)
+*/
