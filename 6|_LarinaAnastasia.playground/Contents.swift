@@ -48,7 +48,6 @@ struct queue <T> {
         print(topic)
     }
 }
-
 extension queue {
     func myFilter(predicate:(T) -> Bool) -> [T] {
         var result = [T]()
